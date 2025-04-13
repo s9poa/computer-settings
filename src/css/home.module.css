@@ -1,0 +1,102 @@
+main > .grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+main .grid > .lc {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+main .item-container {
+    background: var(--item-bg);
+    border-radius: 10px;
+}
+/* Item 1 */
+main .item-container.one .header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1.5rem;
+}
+main .item-container.one .header h3 {
+    font-weight: 500;
+}
+main .item-container.one .header p {
+    color: var(--txt-clr-secondary);
+}
+main .item-container.one a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem;
+    border-top: 1px solid #333;
+
+    &:hover {
+        background: rgba(255,255,255,.05);
+    }
+}
+main .item-container.one a:last-of-type {
+    border-radius: 0 0 10px 10px;
+}
+main .item-container.one a i {
+    min-width: 4rem;
+    text-align: center;
+}
+/* Item 2 */
+main .item-container.two {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+main .item-container.two i {
+    font-size: 2rem;
+    color: dodgerblue;
+}
+main .item-container.two button {
+    height: 3rem;
+    background: rgba(255,255,255,.05);
+    padding-inline: 2rem;
+    border-radius: 5px;
+
+    &:hover {
+        background: rgba(255,255,255,.1);
+    }
+}
+/* Item 4 */
+main .item-container.four {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+main .item-container.four > i {
+    font-size: 2rem;
+    color: dodgerblue;
+}
+main .item-container.four > .row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+main .item-container.four > .row i:nth-child(1) {
+    color: cornflowerblue;
+}
+main .item-container.four > .row i:nth-child(2) {
+    color: olivedrab;
+}
+main .item-container.four > .row i:nth-child(3) {
+    color: rgb(253, 90, 49);
+}
+main .item-container.four > button {
+    background: hsl(219, 79%, 50%);
+    padding-inline: 2rem;
+    height: 3rem;
+    border-radius: 10px;
+    align-content: center;
+    font-weight: 700;
+}

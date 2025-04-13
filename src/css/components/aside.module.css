@@ -1,0 +1,106 @@
+aside.main-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    max-width: 20rem;
+    min-width: 20rem;
+    height: 100vh;
+    height: 100svh;
+    height: 100dvh;
+
+    padding: 1rem;
+}
+/* Header */
+aside > .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+aside .header > i {
+    font-size: 3rem;
+}
+aside .header > div {
+    display: flex;
+    flex-direction: column;
+}
+aside .header .name {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+aside .header .email {
+    color: var(--txt-clr-secondary);
+}
+/* Form */
+aside form > div {
+    display: flex;
+    height: 3rem;
+}
+aside form > div > * {
+    background: rgba(255,255,255,.1);
+}
+aside form input {
+    flex-grow: 1;
+
+    border: none;
+    border-radius: 10px 0 0 10px;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+aside form input::placeholder {
+    color: var(--txt-clr-secondary);
+}
+aside form button {
+    max-width: 3rem;
+    min-width: 3rem;
+    border-radius: 0 10px 10px 0;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background: rgba(255,255,255,.2);
+    }
+}
+/* Nav */
+aside nav {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+aside nav a {
+    padding: .5rem;
+    padding-left: 1rem;
+    border-radius: 10px;
+    width: 100%;
+
+    &:hover {
+        background: rgba(255,255,255,.05);
+    }
+}
+aside nav a.active {
+    background: rgba(255,255,255,.1);
+    position: relative;
+}
+aside nav a.active::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+
+    background: dodgerblue;
+    border-radius: 100vw;
+
+    width: 4px;
+    height: 16px;
+}
+aside nav i {
+    max-width: 2rem;
+    min-width: 2rem;
+}
+
+@media (max-width: 720px) {
+    aside {
+        display: none !important;
+    }
+}
