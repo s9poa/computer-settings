@@ -27,18 +27,18 @@ function Aside() {
             </form>
 
             <nav>
-                <Link to="/" className={location.pathname === "/" ? styles.active : ""}><i className="fa-solid fa-house"></i>Home</Link>
-                <Link to="/system" className={location.pathname === "/system" ? styles.active : ""}><i className="fa-solid fa-computer"></i>System</Link>
-                <Link to="/bluetooth" className={location.pathname === "/bluetooth" ? styles.active : ""}><i className="fa-solid fa-tower-broadcast"></i>Bluetooth & Devices</Link>
-                <Link to="/network" className={location.pathname === "/network" ? styles.active : ""}><i className="fa-solid fa-wifi"></i>Network & Internet</Link>
-                <Link to="/personalization" className={location.pathname === "/personalization" ? styles.active : ""}><i className="fa-solid fa-pen"></i>Personalization</Link>
-                <Link to="/apps" className={location.pathname === "/apps" ? styles.active : ""}><i className="fa-solid fa-shapes"></i>Apps</Link>
-                <Link to="/accounts" className={location.pathname === "/accounts" ? styles.active : ""}><i className="fa-solid fa-user"></i>Accounts</Link>
-                <Link to="/language" className={location.pathname === "/language" ? styles.active : ""}><i className="fa-solid fa-globe"></i>Time & Language</Link>
-                <Link to="/gaming" className={location.pathname === "/gaming" ? styles.active : ""}><i className="fa-solid fa-gamepad"></i>Gaming</Link>
-                <Link to="/accessibility" className={location.pathname === "/accessibility" ? styles.active : ""}><i className="fa-solid fa-universal-access"></i>Accessibility</Link>
-                <Link to="/privacy" className={location.pathname === "/privacy" ? styles.active : ""}><i className="fa-solid fa-shield"></i>Privacy & Security</Link>
-                <Link to="/update" className={location.pathname === "/update" ? styles.active : ""}><i className="fa-solid fa-arrows-rotate"></i>Windows Update</Link>
+                <Link to="/computer-settings" className={location.pathname === "/computer-settings" ? styles.active : ""}><i className="fa-solid fa-house"></i>Home</Link>
+                <Link to="/computer-settings/system" className={location.pathname === "/computer-settings/system" ? styles.active : ""}><i className="fa-solid fa-computer"></i>System</Link>
+                <Link to="/computer-settings/bluetooth" className={location.pathname === "/computer-settings/bluetooth" ? styles.active : ""}><i className="fa-solid fa-tower-broadcast"></i>Bluetooth & Devices</Link>
+                <Link to="/computer-settings/network" className={location.pathname === "/computer-settings/network" ? styles.active : ""}><i className="fa-solid fa-wifi"></i>Network & Internet</Link>
+                <Link to="/computer-settings/personalization" className={location.pathname === "/computer-settings/personalization" ? styles.active : ""}><i className="fa-solid fa-pen"></i>Personalization</Link>
+                <Link to="/computer-settings/apps" className={location.pathname === "/computer-settings/apps" ? styles.active : ""}><i className="fa-solid fa-shapes"></i>Apps</Link>
+                <Link to="/computer-settings/accounts" className={location.pathname === "/computer-settings/accounts" ? styles.active : ""}><i className="fa-solid fa-user"></i>Accounts</Link>
+                <Link to="/computer-settings/language" className={location.pathname === "/computer-settings/language" ? styles.active : ""}><i className="fa-solid fa-globe"></i>Time & Language</Link>
+                <Link to="/computer-settings/gaming" className={location.pathname === "/computer-settings/gaming" ? styles.active : ""}><i className="fa-solid fa-gamepad"></i>Gaming</Link>
+                <Link to="/computer-settings/accessibility" className={location.pathname === "/computer-settings/accessibility" ? styles.active : ""}><i className="fa-solid fa-universal-access"></i>Accessibility</Link>
+                <Link to="/computer-settings/privacy" className={location.pathname === "/computer-settings/privacy" ? styles.active : ""}><i className="fa-solid fa-shield"></i>Privacy & Security</Link>
+                <Link to="/computer-settings/update" className={location.pathname === "/computer-settings/update" ? styles.active : ""}><i className="fa-solid fa-arrows-rotate"></i>Windows Update</Link>
             </nav>
         </aside>
     );

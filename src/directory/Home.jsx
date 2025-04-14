@@ -53,6 +53,29 @@ function Home() {
             </div>
             <button>Add now</button>
           </div>
+          {/* Item 3 */}
+          <div className={`${styles["item-container"]} ${styles.three}`}>
+            <h3>Personalize your device</h3>
+            <div className={styles["img-grid"]}>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div className={styles["color-mode"]}>
+              <div>
+                <i className="fa-solid fa-palette" aria-hidden="true"></i>
+                <span>Color mode</span>
+              </div>
+              <select>
+                <option>Dark</option>
+                <option>Light</option>
+              </select>
+            </div>
+            <Link to="/computer-settings/personalization" className={styles["browse-personalization"]}><span>Browse more backgrounds, colors, and themes</span> <i className="fa-solid fa-chevron-right" aria-hidden="true"></i></Link>
+          </div>
         </div>
         <div className={styles.rc}>
           {/* Item 4 */}

@@ -11,8 +11,8 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <Aside />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/system" element={<System />} />
+      <Route path="/computer-settings" element={<Home />} />
+      <Route path="/computer-settings/system" element={<System />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

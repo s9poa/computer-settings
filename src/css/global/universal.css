@@ -25,6 +25,8 @@
 }
 body {
   background: var(--body-bg);
+  background-image: radial-gradient(hsl(0,0%,12.5%) 1px, transparent 1px);
+  background-size: 10px 10px;
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--heading-font-family);

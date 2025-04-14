@@ -23,7 +23,7 @@ function ComputerSpecs() {
     return (
         <div className={styles.header}>
             <div className={styles.lc}>
-                <img src="/desktop-bg.avif" alt="" width="160" height="95.67"/>
+                <img src="/computer-settings/desktop-bg.avif" alt="" width="160" height="95.67"/>
                 <div>
                     <h2 className={styles["pc-display-name"]}>{currentName}</h2>
                     <span>Cookie Destroyer Desktop +2000 - Omega</span>

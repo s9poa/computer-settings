@@ -10,6 +10,11 @@ aside.main-aside {
     height: 100dvh;
 
     padding: 1rem;
+
+    position: sticky;
+    top: 0;
+
+    overflow: scroll;
 }
 /* Header */
 aside > .header {

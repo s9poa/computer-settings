@@ -31,6 +31,7 @@ main .item-container.one a {
     justify-content: space-between;
     padding-block: 1rem;
     border-top: 1px solid #333;
+    height: 4rem;
 
     &:hover {
         background: rgba(255,255,255,.05);
@@ -51,6 +52,10 @@ main .item-container.two {
     align-items: flex-start;
     gap: 2rem;
 }
+main .item-container.two h3 {
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
 main .item-container.two i {
     font-size: 2rem;
     color: dodgerblue;
@@ -59,11 +64,91 @@ main .item-container.two button {
     height: 3rem;
     background: rgba(255,255,255,.05);
     padding-inline: 2rem;
-    border-radius: 5px;
+    border-radius: 100vw;
 
     &:hover {
         background: rgba(255,255,255,.1);
     }
+}
+/* Item 3 */
+main .item-container.three {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+main .item-container.three h3 {
+    font-weight: 500;
+    padding: 2rem 1.5rem;
+}
+main .item-container.three .img-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    width: 100%;
+    padding-inline: 1.5rem;
+}
+main .item-container.three .img-grid > div {
+    width: 100%;
+    height: 80px;
+    border: 3px dashed gray;
+    position: relative;
+    border-radius: 10px;
+}
+main .item-container.three .img-grid > div::before {
+    content: 'IMG';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    color: var(--txt-clr-secondary);
+}
+main .item-container.three .color-mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 1.5rem;
+    border-block: 1px solid #333;
+    margin-top: 2rem;
+    gap: 1rem;
+    width: 100%;
+}
+main .item-container.three .color-mode i {
+    text-align: center;
+    margin-right: 1.5rem;
+}
+main .item-container.three .color-mode select {
+    background: rgba(255,255,255,.05);
+    border: none;
+    height: 2rem;
+    max-width: 8rem;
+    width: 100%;
+    padding-inline: .5rem;
+    border-radius: 5px;
+}
+main .item-container.three .color-mode option {
+    background: hsl(0,0%,15%);
+}
+main .item-container.three .browse-personalization {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem;
+    gap: 1rem;
+    width: 100%;
+
+    &:hover {
+        background: rgba(255,255,255,.05);
+    }
+}
+main .item-container.three .browse-personalization > span {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
 /* Item 4 */
 main .item-container.four {
@@ -72,6 +157,10 @@ main .item-container.four {
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
+}
+main .item-container.four h3 {
+    font-weight: 500;
+    margin-bottom: .5rem;
 }
 main .item-container.four > i {
     font-size: 2rem;
@@ -93,10 +182,22 @@ main .item-container.four > .row i:nth-child(3) {
     color: rgb(253, 90, 49);
 }
 main .item-container.four > button {
-    background: hsl(219, 79%, 50%);
+    background: royalblue;
     padding-inline: 2rem;
     height: 3rem;
-    border-radius: 10px;
+    border-radius: 100vw;
     align-content: center;
     font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+    main > .grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    main .item-container.three .img-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
 }
