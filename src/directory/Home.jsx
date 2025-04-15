@@ -93,6 +93,15 @@ function Home() {
               </div>
               <button>Get Microsoft 365</button>
           </div>
+          {/* Item 5 */}
+          <div className={`${styles["item-container"]} ${styles.five}`}>
+            <i className="fa-brands fa-xbox" aria-hidden="true"></i>
+            <div>
+              <h3>Discover your next favorite game</h3>
+              <p>Play hundreds of high-quality PC games with friends, including new day one titles like Call of Duty: Black Ops 6</p>
+            </div>
+            <button>Join Game Pass</button>
+          </div>
         </div>
       </div>
     </main>

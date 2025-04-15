@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <Aside />
       <Routes>
-      <Route path="/computer-settings" element={<Home />} />
+      <Route path="computer-settings/" element={<Home />} />
       <Route path="/computer-settings/system" element={<System />} />
       </Routes>
     </BrowserRouter>

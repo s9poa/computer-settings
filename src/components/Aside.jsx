@@ -27,7 +27,7 @@ function Aside() {
             </form>
 
             <nav>
-                <Link to="/computer-settings" className={location.pathname === "/computer-settings" ? styles.active : ""}><i className="fa-solid fa-house"></i>Home</Link>
+                <Link to="/computer-settings/" className={location.pathname === "/computer-settings/" ? styles.active : ""}><i className="fa-solid fa-house"></i>Home</Link>
                 <Link to="/computer-settings/system" className={location.pathname === "/computer-settings/system" ? styles.active : ""}><i className="fa-solid fa-computer"></i>System</Link>
                 <Link to="/computer-settings/bluetooth" className={location.pathname === "/computer-settings/bluetooth" ? styles.active : ""}><i className="fa-solid fa-tower-broadcast"></i>Bluetooth & Devices</Link>
                 <Link to="/computer-settings/network" className={location.pathname === "/computer-settings/network" ? styles.active : ""}><i className="fa-solid fa-wifi"></i>Network & Internet</Link>
