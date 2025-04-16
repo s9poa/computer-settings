@@ -31,14 +31,14 @@ function ComputerSpecs() {
                 </div>
             </div>
             <div className={styles.rc}>
-                <Link to="/network">
+                <Link to="/computer-settings/network">
                     <i className="fa-solid fa-wifi"></i>
                     <div className={styles.column}>
                         <h2>Bubble Gum Kingdom</h2>
                         <span>Connected, secured</span>
                     </div>
                 </Link>
-                <Link to="/update">
+                <Link to="/computer-settings/update">
                     <i className="fa-solid fa-arrows-rotate"></i>
                     <div className={styles.column}>
                         <h2>Windows Update</h2>

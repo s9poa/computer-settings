@@ -102,10 +102,6 @@ footer {
     border: 1px solid red;
 }
 
-/* Root */
-#root {
-    display: flex;
-}
 
 /* CSS Values */
 .wrapper {

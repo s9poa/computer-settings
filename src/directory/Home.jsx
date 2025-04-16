@@ -22,21 +22,21 @@ function Home() {
               <h3>Recommended settings</h3>
               <p>Recent and commonly used settings</p>
             </div>
-            <Link to="/apps">
+            <Link to="/computer-settings/apps">
               <div>
               <i className="fa-solid fa-list" aria-hidden="true"></i>
                 <span>Installed Apps</span>
               </div>
               <i className="fa-solid fa-chevron-right" aria-hidden="true"></i>
             </Link>
-            <Link to="/apps">
+            <Link to="/computer-settings/apps">
               <div>
                 <i className="fa-brands fa-medapps" aria-hidden="true"></i>
                 <span>Default Apps</span>
               </div>
               <i className="fa-solid fa-chevron-right" aria-hidden="true"></i>
             </Link>
-            <Link to="/system">
+            <Link to="/computer-settings/system">
               <div>
               <i className="fa-solid fa-volume-high" aria-hidden="true"></i>
                 <span>Sound</span>
@@ -67,9 +67,9 @@ function Home() {
             <div className={styles["color-mode"]}>
               <div>
                 <i className="fa-solid fa-palette" aria-hidden="true"></i>
-                <span>Color mode</span>
+                <label htmlFor="home__color-mode">Color Mode</label>
               </div>
-              <select>
+              <select id="home__color-mode">
                 <option>Dark</option>
                 <option>Light</option>
               </select>
@@ -102,7 +102,20 @@ function Home() {
             </div>
             <button>Join Game Pass</button>
           </div>
+          {/* Item 6 */}
+          <div className={`${styles["item-container"]} ${styles.six}`}>
+            <i className="fa-solid fa-cloud" aria-hidden="true"></i>
+            <div>
+              <h3>Cloud Storage</h3>
+              <p>Make sure you're signed in with email@address.com so you can see you storage details here</p>
+            </div>
+            <button>Sign in to OneDrive</button>
+          </div>
         </div>
+      </div>
+      <div className={styles["help-directions"]}>
+        <button><i className="fa-solid fa-comments" aria-hidden="true"></i> <span>Get help</span></button>
+        <button><i className="fa-solid fa-message" aria-hidden="true"></i> <span>Get feedback</span></button>
       </div>
     </main>
   )

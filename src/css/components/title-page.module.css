@@ -1,3 +1,11 @@
 .title {
     font-weight: 400;
+    background: rgba(255,255,255,.05);
+    border-radius: 100vw;
+    padding-inline: 1.5rem;
+    height: 4rem;
+    align-content: center;
+    box-shadow: var(--box-shadow);
+    outline: 3px solid hsl(0,0%,10%);
+    outline-offset: -6px;
 }

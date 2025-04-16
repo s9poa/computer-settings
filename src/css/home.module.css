@@ -223,6 +223,62 @@ main .item-container.five button {
         background: rgba(255,255,255,.1);
     }
 }
+/* Item 6 */
+main .item-container.six {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+main .item-container.six h3 {
+    font-weight: 500;
+    margin-bottom: .5rem;    
+}
+main .item-container.six p {
+    color: var(--txt-clr-secondary);
+}
+main .item-container.six i {
+    font-size: 2rem;
+    color: dodgerblue;
+}
+main .item-container.six button {
+    height: 3rem;
+    background: rgba(255,255,255,.05);
+    padding-inline: 2rem;
+    border-radius: 100vw;
+
+    &:hover {
+        background: rgba(255,255,255,.1);
+    }
+}
+/* Help Directions */
+main > .help-directions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    color: var(--blue);
+}
+main > .help-directions button {
+    display: flex;
+    align-items: center;
+}
+main > .help-directions button:hover > span {
+    text-decoration: underline;
+}
+main > .help-directions i {
+    min-width: 3rem;
+    min-height: 3rem;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+main > .help-directions span {
+    color: var(--blue);
+    margin-left: .5rem;
+}
 @media (max-width: 1200px) {
     main > .grid {
         grid-template-columns: repeat(1,1fr);
