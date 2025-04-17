@@ -52,9 +52,9 @@ function MobileMenu() {
                     <button aria-label="Close menu" className={styles["close-menu"]} onClick={closeMenu}><i className="fa-solid fa-xmark" aria-hidden="true"></i></button>
                 </div>
                 <form>
-                    <label htmlFor="aside__search" className="visually-hidden">Search:</label>
+                    <label htmlFor="aside__search__mobile" className="visually-hidden">Search:</label>
                     <div>
-                        <input type="text" placeholder="Find a setting" id="aside__search" required/>
+                        <input type="text" placeholder="Find a setting" id="aside__search__mobile" required/>
                         <button aria-label="Search"><i className="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
                     </div>
                 </form>

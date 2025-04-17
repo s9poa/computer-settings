@@ -2,7 +2,10 @@ import styles from "../css/components/title-page.module.css";
 
 function TitlePage({title}) {
     return (
-        <h1 className={styles.title}>{title}</h1>
+        <div className={styles.container}>
+            <div className={styles.glow}></div>
+            <h1 className={styles.title}>{title}</h1>
+        </div>
     )
 }
 
