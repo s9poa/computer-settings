@@ -59,7 +59,7 @@ function Home() {
               <h3>Never lose access to your account</h3>
               <p>Add a recovery phone number to make sure you can always get into you account</p>
             </div>
-            <button type="button" className="open-user-feedback-dialog" onClick={handleTrigger}>Add now</button>
+            <button className="open-user-feedback-dialog" onClick={handleTrigger}>Add now</button>
           </div>
           {/* Item 3 */}
           <div className={`${styles["item-container"]} ${styles.three}`}>
@@ -85,7 +85,7 @@ function Home() {
             <div className={styles.row}>
               <i className="fa-solid fa-file-word"></i><i className="fa-solid fa-file-excel"></i><i className="fa-solid fa-file-powerpoint"></i><i className="fa-solid fa-file-outlook"></i>
             </div>
-            <button type="button" className="open-user-feedback-dialog" onClick={handleTrigger}>Get Microsoft 365</button>
+            <button className="open-user-feedback-dialog" onClick={handleTrigger}>Get Microsoft 365</button>
           </div>
           {/* Item 5 */}
           <div className={`${styles["item-container"]} ${styles.five}`}>
@@ -94,7 +94,7 @@ function Home() {
               <h3>Discover your next favorite game</h3>
               <p>Play hundreds of high-quality PC games with friends, including new day one titles like Call of Duty: Black Ops 6</p>
             </div>
-            <button type="button" className="open-user-feedback-dialog" onClick={handleTrigger}>Join Game Pass</button>
+            <button className="open-user-feedback-dialog" onClick={handleTrigger}>Join Game Pass</button>
           </div>
           {/* Item 6 */}
           <div className={`${styles["item-container"]} ${styles.six}`}>
@@ -103,13 +103,13 @@ function Home() {
               <h3>Cloud Storage</h3>
               <p>Make sure you're signed in with email@address.com so you can see you storage details here</p>
             </div>
-            <button type="button" className="open-user-feedback-dialog" onClick={handleTrigger}>Sign in to OneDrive</button>
+            <button className="open-user-feedback-dialog" onClick={handleTrigger}>Sign in to OneDrive</button>
           </div>
         </div>
       </div>
       <div className={styles["help-directions"]}>
-        <button type="button"><i className="fa-solid fa-comments" aria-hidden="true"></i><span>Get help</span></button>
-        <button type="button"><i className="fa-solid fa-message" aria-hidden="true"></i><span>Get feedback</span></button>
+        <button className="open-user-feedback-dialog" onClick={handleTrigger}><i className="fa-solid fa-comments" aria-hidden="true"></i><span>Get help</span></button>
+        <button className="open-user-feedback-dialog" onClick={handleTrigger}><i className="fa-solid fa-message" aria-hidden="true"></i><span>Get feedback</span></button>
       </div>
       <UserFeedback isOpen={showUserFeedback} trapFocus={trapFocus} onClose={closeDialog} />
     </main>

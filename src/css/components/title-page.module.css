@@ -10,7 +10,7 @@
 }
 .glow {
     position: absolute;
-    width: 50px;
+    width: 150px;
     height: 50px;
     border-radius: 50%;
     background-image: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
@@ -18,7 +18,7 @@
     left: 0%;
     transform: translate(-50%, -50%);
     filter: blur(10px);
-    animation: trace 60s infinite linear;
+    animation: trace 10s infinite linear;
 }
 .title {
     position: relative;
