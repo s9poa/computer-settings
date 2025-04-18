@@ -1,30 +1,15 @@
-import { useState, useRef, useCallback } from 'react';
 import styles from '../css/home.module.css';
 import '../css/global/universal.css';
 import '../assets/fontawesome/css/all.min.css';
 
 import TitlePage from '../components/TitlePage';
 import ComputerSpecs from '../components/ComputerSpecs';
-import UserFeedback from '../components/UserFeedback';
+import { useFeedback } from '../components/FeedbackDialog';
 
 import { Link } from 'react-router';
 
 function Home() {
-  const [showUserFeedback, setShowUserFeedback] = useState(false);
-  const [trapFocus, setTrapFocus] = useState(false);
-  const lastFocusedRef = useRef(null);
-
-  const openDialog = useCallback((trap, e) => {
-    lastFocusedRef.current = e.currentTarget;
-    setTrapFocus(trap);
-    setShowUserFeedback(true);
-  }, []);
-
-  const closeDialog = useCallback(() => {
-    setShowUserFeedback(false);
-    if (trapFocus && lastFocusedRef.current) lastFocusedRef.current.focus();
-  }, [trapFocus]);
-
+  const { openDialog } = useFeedback();
   const handleTrigger = e => openDialog(e.detail === 0, e);
 
   return (
@@ -111,7 +96,6 @@ function Home() {
         <button className="open-user-feedback-dialog" onClick={handleTrigger}><i className="fa-solid fa-comments" aria-hidden="true"></i><span>Get help</span></button>
         <button className="open-user-feedback-dialog" onClick={handleTrigger}><i className="fa-solid fa-message" aria-hidden="true"></i><span>Get feedback</span></button>
       </div>
-      <UserFeedback isOpen={showUserFeedback} trapFocus={trapFocus} onClose={closeDialog} />
     </main>
   );
 }

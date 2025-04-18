@@ -2,28 +2,12 @@ import styles from '../css/system.module.css';
 import '../css/global/universal.css';
 import '../assets/fontawesome/css/all.min.css';
 
-import { useState, useRef, useCallback } from 'react';
-
 import TitlePage from '../components/TitlePage';
 import ComputerSpecs from '../components/ComputerSpecs';
-import UserFeedback from '../components/UserFeedback';
+import { useFeedback } from '../components/FeedbackDialog';
 
 function System() {
-      const [showUserFeedback, setShowUserFeedback] = useState(false);
-      const [trapFocus, setTrapFocus] = useState(false);
-      const lastFocusedRef = useRef(null);
-    
-      const openDialog = useCallback((trap, e) => {
-        lastFocusedRef.current = e.currentTarget;
-        setTrapFocus(trap);
-        setShowUserFeedback(true);
-      }, []);
-    
-      const closeDialog = useCallback(() => {
-        setShowUserFeedback(false);
-        if (trapFocus && lastFocusedRef.current) lastFocusedRef.current.focus();
-      }, [trapFocus]);
-    
+      const { openDialog } = useFeedback();
       const handleTrigger = e => openDialog(e.detail === 0, e);
 
     return (
@@ -212,7 +196,6 @@ function System() {
                 <i className="fa-solid fa-chevron-right" aria-hidden="true"></i>
             </button>
         </div>
-        <UserFeedback isOpen={showUserFeedback} trapFocus={trapFocus} onClose={closeDialog} />
     </main>
     )
 }

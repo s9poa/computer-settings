@@ -61,7 +61,7 @@ function MobileMenu() {
                 <nav>
                     <Link to="/computer-settings/" onClick={closeMenu} className={location.pathname === "/computer-settings/" ? styles.active : ""}><i className="fa-solid fa-house"></i>Home</Link>
                     <Link to="/computer-settings/system" onClick={closeMenu} className={location.pathname === "/computer-settings/system" ? styles.active : ""}><i className="fa-solid fa-computer"></i>System</Link>
-                    <Link to="/computer-settings/bluetooth" onClick={closeMenu} className={location.pathname === "/computer-settings/bluetooth" ? styles.active : ""}><i className="fa-solid fa-tower-broadcast"></i>Bluetooth & Devices</Link>
+                    <Link to="/computer-settings/bluetooth-and-devices" onClick={closeMenu} className={location.pathname === "/computer-settings/bluetooth-and-devices" ? styles.active : ""}><i className="fa-solid fa-tower-broadcast"></i>Bluetooth & Devices</Link>
                     <Link to="/computer-settings/network" onClick={closeMenu} className={location.pathname === "/computer-settings/network" ? styles.active : ""}><i className="fa-solid fa-wifi"></i>Network & Internet</Link>
                     <Link to="/computer-settings/personalization" onClick={closeMenu} className={location.pathname === "/computer-settings/personalization" ? styles.active : ""}><i className="fa-solid fa-pen"></i>Personalization</Link>
                     <Link to="/computer-settings/apps" onClick={closeMenu} className={location.pathname === "/computer-settings/apps" ? styles.active : ""}><i className="fa-solid fa-shapes"></i>Apps</Link>
