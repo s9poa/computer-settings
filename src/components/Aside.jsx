@@ -30,7 +30,7 @@ function Aside() {
                 <Link to="/computer-settings/" className={location.pathname === "/computer-settings/" ? styles.active : ""}><i className="fa-solid fa-house"></i>Home</Link>
                 <Link to="/computer-settings/system" className={location.pathname === "/computer-settings/system" ? styles.active : ""}><i className="fa-solid fa-computer"></i>System</Link>
                 <Link to="/computer-settings/bluetooth-and-devices" className={location.pathname === "/computer-settings/bluetooth-and-devices" ? styles.active : ""}><i className="fa-solid fa-tower-broadcast"></i>Bluetooth & Devices</Link>
-                <Link to="/computer-settings/network" className={location.pathname === "/computer-settings/network" ? styles.active : ""}><i className="fa-solid fa-wifi"></i>Network & Internet</Link>
+                <Link to="/computer-settings/network-and-internet" className={location.pathname === "/computer-settings/network-and-internet" ? styles.active : ""}><i className="fa-solid fa-wifi"></i>Network & Internet</Link>
                 <Link to="/computer-settings/personalization" className={location.pathname === "/computer-settings/personalization" ? styles.active : ""}><i className="fa-solid fa-pen"></i>Personalization</Link>
                 <Link to="/computer-settings/apps" className={location.pathname === "/computer-settings/apps" ? styles.active : ""}><i className="fa-solid fa-shapes"></i>Apps</Link>
                 <Link to="/computer-settings/accounts" className={location.pathname === "/computer-settings/accounts" ? styles.active : ""}><i className="fa-solid fa-user"></i>Accounts</Link>

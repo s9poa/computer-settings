@@ -1,57 +1,76 @@
-.content-layout {
+.header {
     display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-button.add-device {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+}
+.header .lc {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
-    background: rgba(255,255,255,.05);
-    max-width: 12.5rem;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border-radius: 10px;
-    transition: background .2s ease-in-out;
-
-    &:hover {
-        background: rgba(255,255,255,.1);
-    }
 }
-button.add-device i {
-    font-size: 2rem;
+.header .lc > div span {
+    color: var(--txt-clr-secondary);
 }
-button.view-more-devices {
-    background: rgba(255,255,255,.05);
-    border-radius: 10px;
-    padding: 1rem;
+.header .lc > div span i {
     color: var(--blue);
+    font-size: .8rem;
+    margin-right: .5rem;
+}
+.header .lc h2 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.header .lc > i {
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    border: 3px solid #333;
+    max-width: 4rem;
+    min-width: 4rem;
+    min-height: 4rem;
+    color: hsl(0,0%,40%);
+}
+.header .rc {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header .rc > button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 10px;
 
     &:hover {
-        background: rgba(255,255,255,.1);
+        background: rgba(255,255,255,.05);
     }
 }
-.bluetooth-item {
-    cursor: default;
-    &:hover {
-        background: rgba(255,255,255,.05) !important;
-    }
+.header .rc > button > i {
+    color: var(--blue);
 }
-.bluetooth-state-tracker{
-    color: inherit;
+.header .rc > button > div {
+    text-align: left;
 }
+.header .rc > button h3 {
+    font-size: .8rem;
+    font-weight: 500;   
+}
+.header .rc > button span {
+    font-size: .8rem;
+    color: var(--txt-clr-secondary);
+}
+
+/* Item */
 .item-listing {
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    margin-top: 1.5rem;
 }
-.device-item {
-    flex-wrap: wrap;
-}
-.item {
+.item-listing .item {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,20 +84,20 @@ button.view-more-devices {
         background: rgba(255,255,255,.1);
     }
 }
-.item > .lc {
+.item-listing .item > .lc {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
-.item > .lc > div {
+.item-listing .item > .lc > div {
     text-align: left;
 }
-.item > .rc {
+.item-listing .item > .rc {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-.item > .rc span {
+.item-listing .item > .rc span {
     align-content: center;
     background: royalblue;
     height: 2rem;
@@ -86,13 +105,13 @@ button.view-more-devices {
     border-radius: 100vw;
     width: max-content;
 }
-.item > .rc i {
+.item-listing .item > .rc i {
     font-size: .8rem;
 }
-.item > i {
+.item-listing .item > i, .item-listing .item form > i {
     font-size: .8rem;
 }
-.item h3 {
+.item-listing .item h3 {
     font-weight: 500;
     font-size: 1rem;
     display: -webkit-box;
@@ -101,7 +120,7 @@ button.view-more-devices {
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
-.item p {
+.item-listing .item p {
     color: var(--txt-clr-secondary);
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -109,15 +128,15 @@ button.view-more-devices {
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
-.item > form {
+.item-listing .item > form {
     min-width: max-content;
 }
-.item > form label {
+.item-listing .item > form label {
     padding-right: 1rem;
     font-family: var(--heading-font-family);
     user-select: none;
 }
-.item > form label::before {
+.item-listing .item > form label::before {
     content: '';
     position: absolute;
     top: 0;
@@ -126,13 +145,13 @@ button.view-more-devices {
     width: 100%;
     height: 100%;
 }
+
+
 @media(max-width: 480px) {
     .independant-style-selector h1 {
         font-size: 1.2rem;
     }
-    button.add-device {
-        max-width: none;
-        width: 100%;
-        aspect-ratio: 16/9;
+    .header .rc > button {
+        flex-grow: 2;
     }
 }

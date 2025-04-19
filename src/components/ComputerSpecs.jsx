@@ -31,7 +31,7 @@ function ComputerSpecs() {
                 </div>
             </div>
             <div className={styles.rc}>
-                <Link to="/computer-settings/network">
+                <Link to="/computer-settings/network-and-internet">
                     <i className="fa-solid fa-wifi"></i>
                     <div className={styles.column}>
                         <h2>Bubble Gum Kingdom</h2>
