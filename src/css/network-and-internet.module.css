@@ -148,9 +148,6 @@
 
 
 @media(max-width: 480px) {
-    .independant-style-selector h1 {
-        font-size: 1.2rem;
-    }
     .header .rc > button {
         flex-grow: 2;
     }

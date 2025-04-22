@@ -127,9 +127,6 @@ button.view-more-devices {
     height: 100%;
 }
 @media(max-width: 480px) {
-    .independant-style-selector h1 {
-        font-size: 1.2rem;
-    }
     button.add-device {
         max-width: none;
         width: 100%;

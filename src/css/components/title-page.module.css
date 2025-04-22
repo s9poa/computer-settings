@@ -81,3 +81,9 @@
   transition: font-size .2s ease-in-out;
   z-index: 2;
 }
+
+@media(max-width: 480px) {
+  .title {
+      font-size: 1.2rem;
+  }
+}
