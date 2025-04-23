@@ -13,6 +13,7 @@ import ScrollToTop from './components/ScrollToTop.jsx';
 import BluetoothAndDevices from './directory/BluetoothAndDevices.jsx';
 import NetworkAndInternet from './directory/NetworkAndInternet.jsx';
 import Personalization from './directory/Personalization.jsx';
+import Apps from './directory/Apps.jsx';
 
 import { FeedbackProvider } from './components/FeedbackDialog.jsx';
 
@@ -30,6 +31,7 @@ createRoot(document.getElementById('root')).render(
             <Route path="/computer-settings/bluetooth-and-devices" element={<BluetoothAndDevices />} />
             <Route path="/computer-settings/network-and-internet" element={<NetworkAndInternet />} />
             <Route path="/computer-settings/personalization" element={<Personalization />} />
+            <Route path="/computer-settings/apps" element={<Apps />} />
           </Routes>
         </div>
       </FeedbackProvider>
