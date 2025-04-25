@@ -1,0 +1,148 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+}
+.header .lc {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: 4rem;
+}
+.header .lc > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.header .lc > div span {
+    color: var(--txt-clr-secondary);
+}
+.header .lc > div span i {
+    color: var(--blue);
+    font-size: .8rem;
+    margin-right: .5rem;
+}
+.header .lc h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+}
+.header .lc > i {
+    font-size: 4rem;
+}
+.header .rc {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header .rc > button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+
+    &:hover {
+        background: rgba(255,255,255,.05);
+    }
+}
+.header .rc > button > i {
+    color: var(--blue);
+}
+.header .rc > button > div {
+    text-align: left;
+}
+.header .rc > button h3 {
+    font-size: .8rem;
+    font-weight: 500;   
+}
+.header .rc > button span {
+    font-size: .8rem;
+    color: var(--txt-clr-secondary);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.header .rc > button span i {
+    font-size: .25rem;
+    color: var(--blue);
+    margin-top: 2px;
+}
+
+/* Item container */
+.item-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.item-container > h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.item-container .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    background: rgba(255,255,255,.05);
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+
+    &:hover {
+        background: rgba(255,255,255,.1);
+    }
+}
+.item-container .item > .lc {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.item-container .item > .lc > div {
+    text-align: left;
+}
+.item-container .item > i {
+    font-size: .8rem;
+}
+.item-container .item h3 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+.item-container .item p {
+    color: var(--txt-clr-secondary);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+/* Help Directions */
+main > .help-directions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    color: var(--blue);
+}
+main > .help-directions button {
+    display: flex;
+    align-items: center;
+}
+main > .help-directions button:hover > span {
+    text-decoration: underline;
+}
+main > .help-directions i {
+    min-width: 3rem;
+    min-height: 3rem;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+main > .help-directions span {
+    color: var(--blue);
+    margin-left: .5rem;
+}
