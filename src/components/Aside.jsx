@@ -34,7 +34,7 @@ function Aside() {
                 <Link to="/computer-settings/personalization" className={location.pathname === "/computer-settings/personalization" ? styles.active : ""}><i className="fa-solid fa-pen"></i>Personalization</Link>
                 <Link to="/computer-settings/apps" className={location.pathname === "/computer-settings/apps" ? styles.active : ""}><i className="fa-solid fa-shapes"></i>Apps</Link>
                 <Link to="/computer-settings/accounts" className={location.pathname === "/computer-settings/accounts" ? styles.active : ""}><i className="fa-solid fa-user"></i>Accounts</Link>
-                <Link to="/computer-settings/language" className={location.pathname === "/computer-settings/language" ? styles.active : ""}><i className="fa-solid fa-globe"></i>Time & Language</Link>
+                <Link to="/computer-settings/time-and-language" className={location.pathname === "/computer-settings/time-and-language" ? styles.active : ""}><i className="fa-solid fa-globe"></i>Time & Language</Link>
                 <Link to="/computer-settings/gaming" className={location.pathname === "/computer-settings/gaming" ? styles.active : ""}><i className="fa-solid fa-gamepad"></i>Gaming</Link>
                 <Link to="/computer-settings/accessibility" className={location.pathname === "/computer-settings/accessibility" ? styles.active : ""}><i className="fa-solid fa-universal-access"></i>Accessibility</Link>
                 <Link to="/computer-settings/privacy" className={location.pathname === "/computer-settings/privacy" ? styles.active : ""}><i className="fa-solid fa-shield"></i>Privacy & Security</Link>
