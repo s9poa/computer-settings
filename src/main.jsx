@@ -16,6 +16,7 @@ import Personalization from './directory/Personalization.jsx';
 import Apps from './directory/Apps.jsx';
 import Accounts from './directory/Accounts.jsx';
 import TimeAndLanguage from './directory/TimeAndLanguage.jsx';
+import Gaming from './directory/Gaming.jsx';
 
 import { FeedbackProvider } from './components/FeedbackDialog.jsx';
 
@@ -36,6 +37,7 @@ createRoot(document.getElementById('root')).render(
             <Route path="/computer-settings/apps" element={<Apps />} />
             <Route path="/computer-settings/accounts" element={<Accounts />} />
             <Route path="/computer-settings/time-and-language" element={<TimeAndLanguage />} />
+            <Route path="/computer-settings/gaming" element={<Gaming />} />
           </Routes>
         </div>
       </FeedbackProvider>
