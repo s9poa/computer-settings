@@ -1,0 +1,46 @@
+/* Item container */
+.item-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.item-container > h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.item-container .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    background: rgba(255,255,255,.05);
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+
+    &:hover {
+        background: rgba(255,255,255,.1);
+    }
+}
+.item-container .item > .lc {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.item-container .item > .lc > div {
+    text-align: left;
+}
+.item-container .item > i {
+    font-size: .8rem;
+}
+.item-container .item h3 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+.item-container .item p {
+    color: var(--txt-clr-secondary);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
