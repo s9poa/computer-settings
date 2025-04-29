@@ -68,11 +68,10 @@
   background: hsl(0, 0%, 80%);
 }
 .title {
-  font-weight: 700;
+  font-weight: 300;
   text-align: center;
   border-radius: inherit;
   padding-inline: 1rem;
-  text-transform: uppercase;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   line-clamp: 1;
