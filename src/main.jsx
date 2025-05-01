@@ -19,6 +19,7 @@ import TimeAndLanguage from './directory/TimeAndLanguage.jsx';
 import Gaming from './directory/Gaming.jsx';
 import Accessibility from './directory/Accessibility.jsx';
 import PrivacyAndSecurity from './directory/PrivacyAndSecurity.jsx';
+import WindowsUpdate from './directory/WindowsUpdate.jsx';
 
 import { FeedbackProvider } from './components/FeedbackDialog.jsx';
 
@@ -42,6 +43,7 @@ createRoot(document.getElementById('root')).render(
             <Route path="/computer-settings/gaming" element={<Gaming />} />
             <Route path="/computer-settings/accessibility" element={<Accessibility />} />
             <Route path="/computer-settings/privacy-and-security" element={<PrivacyAndSecurity />} />
+            <Route path="/computer-settings/windows-update" element={<WindowsUpdate />} />
           </Routes>
         </div>
       </FeedbackProvider>
